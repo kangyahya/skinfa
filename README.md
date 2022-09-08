@@ -61,3 +61,13 @@ e.LastName, e.Title
 FROM orders o, customers c, employees e
 WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID AND e.FirstName='Margaret'
 ```
+
+5. Menampilkan Data dari Empat Tabel **(customers, orders, orderdetails, products)**
+
+```sql
+SELECT c.CustomerID, c.CompanyName,
+o.OrderDate, od.ProductID, p.ProductName, od.Quantity AS Qty, od.UnitPrice
+FROM customers c, orders o, orderdetails od, products p
+WHERE c.CustomerID = o.CustomerID AND o.OrderID = od.OrderID AND p.ProductID = od.ProductID
+ORDER BY c.CustomerID
+```
