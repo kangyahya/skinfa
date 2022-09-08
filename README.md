@@ -29,3 +29,13 @@ e.LastName, e.Title
 FROM orders o, customers c, employees e
 WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID
 ```
+
+4. Menampilkan data dari 3 tabel **(orders, customers dan employees)** dengan kriteria yang nama depannya Margaret
+
+```sql
+SELECT o.OrderID, o.OrderDate,
+c.CompanyName, c.ContactName, c.Phone,
+e.LastName, e.Title
+FROM orders o, customers c, employees e
+WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID AND e.FirstName='Margaret'
+```
