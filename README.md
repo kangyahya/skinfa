@@ -12,7 +12,7 @@ Penunjang KBM
 ##Tabel orders
 ![Tabel Orders](https://github.com/kangyahya/skinfa/blob/master/assets/orders.PNG "SELECT * FROM orders")
 ##Tabel Detail Orders
-![Tabel Order Detail](https://github.com/kangyahya/skinfa/blob/master/assets/oderdetails.PNG "SELECT * FROM orderdetails")
+![Tabel Order Detail](https://github.com/kangyahya/skinfa/blob/master/assets/orderdetails.PNG "SELECT * FROM orderdetails")
 
 1. Menampilkan data dari dua tabel **(orders dan customers)**
 
