@@ -1,6 +1,18 @@
 # skinfa
 
 Penunjang KBM
+#Berikut adalah tabel tabel yang di gunakan untuk penunjang praktek basis data
+
+##Tabel customers
+![Tabel Customer](https://github.com/kangyahya/skinfa/blob/master/assets/customers.PNG "SELECT * FROM customers")
+##Tabel employees
+![Tabel Employees](https://github.com/kangyahya/skinfa/blob/master/assets/employees.PNG "SELECT * FROM employees")
+##Tabel products
+![Tabel Products](https://github.com/kangyahya/skinfa/blob/master/assets/products.PNG "SELECT * FROM products")
+##Tabel orders
+![Tabel Orders](https://github.com/kangyahya/skinfa/blob/master/assets/orders.PNG "SELECT * FROM orders")
+##Tabel Detail Orders
+![Tabel Order Detail](https://github.com/kangyahya/skinfa/blob/master/assets/oderdetails.PNG "SELECT * FROM orderdetails")
 
 1. Menampilkan data dari dua tabel **(orders dan customers)**
 
