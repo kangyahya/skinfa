@@ -80,7 +80,7 @@ WHERE c.CustomerID = o.CustomerID AND o.OrderID = od.OrderID AND p.ProductID = o
 ```
 7. Memanfaatkan View untuk menampilkan data dari beberapa tabel
 
-> "View adalah objek basis data yang digunakan untuk menampilkan data yang berasal dari satu atau lebih tabel. View Merupakan tabel Virtual yang tidak menyimpan data, tetapi memiliki beberapa perilaku tabel biasa"
+> View adalah objek basis data yang digunakan untuk menampilkan data yang berasal dari satu atau lebih tabel. View Merupakan tabel Virtual yang tidak menyimpan data, tetapi memiliki beberapa perilaku tabel biasa
 ```sql
 CREATE VIEW CustOrderEmp
 AS
