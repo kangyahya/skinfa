@@ -1,4 +1,5 @@
-# Penilaian Tengah Semester
+# PTS
+
 ## Kisi Kisi PTS Basis Data
 - DDL
 - DML
