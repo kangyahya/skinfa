@@ -71,3 +71,20 @@ FROM customers c, orders o, orderdetails od, products p
 WHERE c.CustomerID = o.CustomerID AND o.OrderID = od.OrderID AND p.ProductID = od.ProductID
 ORDER BY c.CustomerID
 ```
+6. Menampilkan Data dari Lima Tabel **(customers, employees, orders, orderdetails, products)**
+
+```sql
+SELECT  c.CustomerID AS CustID, c.CustomerName, o.OrderID AS ordID, o.OrderDate, (e.Lastname & ',' &' '& o.FirstName) AS EmployeeName, od.ProductID AS ProdID, p.ProductName, od.Quantity AS Qty  
+FROM customers c, orders o, orderdetails od, products p, employees e
+WHERE c.CustomerID = o.CustomerID AND o.OrderID = od.OrderID AND p.ProductID = od.ProductID AND e.EmpID = o.EmpID
+```
+7. Memanfaatkan View untuk menampilkan data dari beberapa tabel
+
+> "View adalah objek basis data yang digunakan untuk menampilkan data yang berasal dari satu atau lebih tabel. View Merupakan tabel Virtual yang tidak menyimpan data, tetapi memiliki beberapa perilaku tabel biasa"
+```sql
+CREATE VIEW CustOrderEmp
+AS
+SELECT c.CustomerID, c.CompanyName, c.ContactName, o.OrderID, o.OrderDate, e.EmpID, e.LastName, e.FirstName
+FROM customers c, orders o, employees e
+WHERE c.CustomerID = o.CustomerID AND o.EmpID = e.EmpID
+```
