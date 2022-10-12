@@ -4,9 +4,9 @@
 # Author:                Valon Hoti                                      #
 # Created on:            2010-07-07 20:00                                #
 # ---------------------------------------------------------------------- #
-DROP DATABASE IF EXISTS northwind_sample;
+DROP DATABASE IF EXISTS northwind;
 
-CREATE DATABASE IF NOT EXISTS northwind_sample;
+CREATE DATABASE IF NOT EXISTS northwind;
 
 USE northwind_sample;
 
